@@ -9,7 +9,6 @@
 
 <video controls src="demo_leta.mp4" title="Title"></video>
 
-
 # Schematic
 
 <figure>
