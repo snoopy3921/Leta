@@ -3,7 +3,7 @@
 
 <figure>
   <img
-  src="P1210208.JPG">
+  src="assets/P1210208.JPG">
   <figcaption align=center>Oled wrist watch using Stm32f1 with mini RTOS and Monochrome GUI</figcaption>
 </figure>
 
@@ -17,7 +17,7 @@
 
 <figure>
   <img
-  src="Schema.png">
+  src="assets/Schema.png">
 </figure>
 
 + Microcontroller: Stm32f103xx, 128 kB ROM, 20 kB RAM. Build-int RTC.
@@ -30,7 +30,7 @@
 # PCB
 <figure>
   <img
-  src="Pcb.png">
+  src="assets/Pcb.png">
 </figure>
 
 + 2 layers
@@ -40,31 +40,31 @@
 
 <figure>
   <img
-  src="3d_view.png">
+  src="assets/3d_view.png">
 </figure>
 
 <figure>
   <img
-  src="3_pcb.png">
+  src="assets/3_pcb.png">
 </figure>
 
 <figure>
   <img
-  src="assembled.png">
+  src="assets/assembled.png">
 </figure>
 
 # Enclosure
 
 <figure>
   <img
-  src="case.gif">
+  src="assets/case.gif">
 </figure>
 
 # Program layers
 
 <figure>
   <img
-  src="program_layer.png">
+  src="assets/program_layer.png">
 </figure>
 
 ## AK-mOS
