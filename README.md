@@ -15,7 +15,7 @@
 
 <figure>
   <img
-  src="schema.png">
+  src="Schema.png">
 </figure>
 
 + Microcontroller: Stm32f103xx, 128 kB ROM, 20 kB RAM. Build-int RTC.
