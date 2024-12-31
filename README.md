@@ -7,7 +7,11 @@
   <figcaption align=center>Oled wrist watch using Stm32f1 with mini RTOS and Monochrome GUI</figcaption>
 </figure>
 
-<video controls src="demo_leta.mp4" title="Title"></video>
+
+# Demo
+<div align="center">
+    <video src="https://github.com/user-attachments/assets/c9f8b56e-a367-4709-93c1-a5930ff01f5d" alt="Leta demo" />
+</div>
 
 # Schematic
 
