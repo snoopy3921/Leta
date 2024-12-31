@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "./build_OLED_WATCH/OLED_WATCH.axf",
+            "configFiles": [
+                "/usr/local/share/openocd/scripts/interface/stlink.cfg",
+                "/usr/local/share/openocd/scripts/target/stm32f1x.cfg"
+            ],
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            //"gdbPath": "/usr/bin/gdb-multiarch",
+            "gdbPath": "../../tools/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb",
+            "stlinkPath": "/usr/bin/st-flash",
+            "showDevDebugOutput": "raw",
+            "liveWatch": true,
+        }
+    ]
+}

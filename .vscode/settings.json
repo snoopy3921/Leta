@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "stm32l1xx_conf.h": "c",
+        "stm32f10x.h": "c",
+        "io_cfg.h": "c",
+        "stm32f10x_conf.h": "c",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "type_traits": "cpp",
+        "cmath": "cpp",
+        "limits": "cpp",
+        "new": "cpp"
+    },
+    "cortex-debug.variableUseNaturalFormat": false
+}
