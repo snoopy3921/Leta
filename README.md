@@ -69,7 +69,10 @@
 
 ## AK-mOS
 This project uses a mini RTOS (AK-mOS) which written by me for AK-base-kit (ARM cortex M3). 
+
 The kit you can check out here:
+
+https://github.com/epcbtech/ak-base-kit-stm32l151
 
 The mini RTOS has following features:
 + Preemptive scheduling
@@ -80,10 +83,11 @@ The mini RTOS has following features:
 
 More detail about it: 
 
+https://github.com/snoopy3921/AK-mOS---The-simple-RTOS-on-AK-base-kit
 
 This mini RTOS was created for learning purpose with context switch based on freeRTOS.
 
-Im wishing this OS can be used more to test stability.
+Im hoping this OS can be used more to test stability.
 
 ## Oled GUI
 To control oled display with rich animating. I wrote the library to increase experience on UI.
@@ -103,6 +107,8 @@ Animating can do these things to widgets:
 + Resizing
 
 Check out here is more detail about my GUI:
+
+https://github.com/snoopy3921/Monochrome-Oled-GUI
 
 # References
 These links below are materials which helped me a lot when bulding my project:
