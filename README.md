@@ -13,6 +13,10 @@
     <video src="https://github.com/user-attachments/assets/c9f8b56e-a367-4709-93c1-a5930ff01f5d" alt="Leta demo" />
 </div>
 
+Link youtube:
+
+https://www.youtube.com/watch?v=F7zo0RkRJ88
+
 # Schematic
 
 <figure>
