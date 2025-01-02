@@ -54,7 +54,7 @@ https://www.youtube.com/watch?v=F7zo0RkRJ88
 
 <figure>
   <img
-  src="assets/assembled.png">
+  src="assets/assembled.jpg">
 </figure>
 
 # Enclosure
