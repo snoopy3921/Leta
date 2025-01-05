@@ -181,13 +181,13 @@ void sh1106::display_buffer(const uint8_t* buff)
 		sh1106_command(0x02); // low column start address
 		sh1106_command(0x10); // high column start address
 
-		SH1106_WriteByteBurst((uint8_t*)&buff[(page << 7)], OLED_DATA);
+		//SH1106_WriteByteBurst((uint8_t*)&buff[(page << 7)], OLED_DATA);
 
 		
-		// for (int pixel = 0; pixel < SH1106_LCDWIDTH; pixel++)
-		// {
-		// 	sh1106_data(buff[(page << 7) + pixel]); // Page * 128 + pixel
-		// }
+		for (int pixel = 0; pixel < SH1106_LCDWIDTH; pixel++)
+		{
+			sh1106_data(buff[(page << 7) + pixel]); // Page * 128 + pixel
+		}
 	}
 
 }

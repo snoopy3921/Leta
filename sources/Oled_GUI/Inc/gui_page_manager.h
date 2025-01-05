@@ -20,6 +20,7 @@ enum PAGE_ID{
 	PAGE_MENU_ID,
 	PAGE_TIMER_ID,
 	PAGE_SETTING_ID,
+	PAGE_FLASHING_ID,
 	PAGE_MPU_ID,
 	PAGE_COMPASS_ID,
 	PAGE_RUNNER_GAME_ID, 
@@ -33,6 +34,7 @@ extern void page_menu_reg(void);
 
 extern void page_timer_reg(void);
 extern void page_setting_reg(void);
+extern void page_flashing_reg(void);
 extern void page_mpu_reg(void);
 extern void page_compass_reg(void);
 extern void page_runner_game_reg(void);
