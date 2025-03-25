@@ -1,0 +1,8 @@
+sources/AK-mOS/Src/os_list.c:4:6:os_list_init	0	static
+sources/AK-mOS/Src/os_list.c:15:6:os_list_item_init	0	static
+sources/AK-mOS/Src/os_list.c:20:6:os_list_insert_end	0	static
+sources/AK-mOS/Src/os_list.c:49:14:list_item_get_next	0	static
+sources/AK-mOS/Src/os_list.c:56:14:list_item_get_prev	0	static
+sources/AK-mOS/Src/os_list.c:64:6:os_list_insert	16	static
+sources/AK-mOS/Src/os_list.c:96:10:os_list_remove	0	static
+sources/AK-mOS/Src/os_list.c:119:7:list_get_owner_of_next_item	0	static

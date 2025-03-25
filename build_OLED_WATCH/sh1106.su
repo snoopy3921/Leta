@@ -1,0 +1,18 @@
+sources/driver/sh1106/sh1106.cpp:9:6:void SH1106_RST_Clr()	8	static
+sources/driver/sh1106/sh1106.cpp:13:6:void SH1106_RST_Set()	8	static
+sources/driver/sh1106/sh1106.cpp:69:13:void SH1106_Reset()	16	static
+sources/driver/sh1106/sh1106.cpp:17:6:void SH1106_DC_Clr()	8	static
+sources/driver/sh1106/sh1106.cpp:21:6:void SH1106_DC_Set()	8	static
+sources/driver/sh1106/sh1106.cpp:32:13:void SH1106_WriteByte(uint8_t, uint8_t)	8	static
+sources/driver/sh1106/sh1106.cpp:27:6:void SH1106_IO_Init()	8	static
+sources/driver/sh1106/sh1106.cpp:115:6:void sh1106::sh1106_command(uint8_t)	8	static
+sources/driver/sh1106/sh1106.cpp:119:6:void sh1106::sh1106_data(uint8_t)	8	static
+sources/driver/sh1106/sh1106.cpp:124:1:sh1106::sh1106()	0	static
+sources/driver/sh1106/sh1106.cpp:126:1:sh1106::~sh1106()	0	static
+sources/driver/sh1106/sh1106.cpp:167:6:void sh1106::display_on()	8	static
+sources/driver/sh1106/sh1106.cpp:171:6:void sh1106::display_off()	8	static
+sources/driver/sh1106/sh1106.cpp:176:6:void sh1106::display_buffer(const uint8_t*)	24	static
+sources/driver/sh1106/sh1106.cpp:196:6:void sh1106::clear()	8	static
+sources/driver/sh1106/sh1106.cpp:128:6:void sh1106::init()	8	static
+sources/driver/sh1106/sh1106.cpp:201:6:void sh1106::invertDisplay(uint8_t)	8	static
+sources/driver/sh1106/sh1106.cpp:209:6:void sh1106::setBrightness(unsigned char)	16	static

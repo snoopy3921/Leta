@@ -1,0 +1,7 @@
+sources/device/core/system_stm32f10x.c:992:13:SetSysClockTo72	8	static
+sources/device/core/system_stm32f10x.c:424:13:SetSysClock	8	static
+sources/device/core/system_stm32f10x.c:68:6:_init	0	static
+sources/device/core/system_stm32f10x.c:69:6:_fini	0	static
+sources/device/core/system_stm32f10x.c:70:6:_preini	0	static
+sources/device/core/system_stm32f10x.c:217:6:SystemInit	8	static
+sources/device/core/system_stm32f10x.c:311:6:SystemCoreClockUpdate	0	static

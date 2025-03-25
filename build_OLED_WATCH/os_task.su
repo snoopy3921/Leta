@@ -1,0 +1,16 @@
+sources/AK-mOS/Src/os_task.c:56:13:task_idle_func	0	static
+sources/AK-mOS/Src/os_task.c:101:13:task_switch_delay_lists	0	static
+sources/AK-mOS/Src/os_task.c:63:13:task_timer_func	8	static
+sources/AK-mOS/Src/os_task.c:156:13:add_task_to_rdy_list	16	static
+sources/AK-mOS/Src/os_task.c:85:13:init_task_lists	16	static
+sources/AK-mOS/Src/os_task.c:128:13:add_new_task_to_rdy_list	16	static
+sources/AK-mOS/Src/os_task.c:220:20:os_task_create	32	static
+sources/AK-mOS/Src/os_task.c:167:13:add_curr_task_to_delay_list	16	static
+sources/AK-mOS/Src/os_task.c:51:10:os_task_get_tick	0	static
+sources/AK-mOS/Src/os_task.c:334:6:os_task_create_list	32	static
+sources/AK-mOS/Src/os_task.c:366:9:os_task_increment_tick	16	static
+sources/AK-mOS/Src/os_task.c:433:6:os_task_delay	8	static
+sources/AK-mOS/Src/os_task.c:444:6:os_task_start	8	static
+sources/AK-mOS/Src/os_task.c:453:6:os_task_post_msg_dynamic	24	static
+sources/AK-mOS/Src/os_task.c:525:6:os_task_post_msg_pure	16	static
+sources/AK-mOS/Src/os_task.c:593:8:os_task_wait_for_msg	8	static

@@ -15,7 +15,7 @@
 #include <stdlib.h>
 
 
-#if 0
+#if 1
 #define ALIGNMENT 		((size_t)4u) // must be a power of 2
 
 #define mem_align(size) 	(size_t)(((size) + (ALIGNMENT - 1)) & ~(ALIGNMENT - 1))
@@ -35,7 +35,7 @@ static void os_mem_heap_init(void)
 {
 	uint32_t total_heap_size = OS_CFG_HEAP_SIZE;
 	uint32_t heap_addr = (uint32_t)mem_heap;
-	if ((heap_addr & ALIGNMENT) != 0) /* If address of heap memory is not alligned	*/
+	if ((heap_addr & (ALIGNMENT - 1)) != 0) /* If address of heap memory is not alligned	*/
 	{
 		heap_addr += (ALIGNMENT - 1);
 		heap_addr &= ALIGNMENT;

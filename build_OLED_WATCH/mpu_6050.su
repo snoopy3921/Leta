@@ -1,0 +1,7 @@
+sources/driver/mpu6050/mpu_6050.c:74:6:MPU6050_Init	8	static
+sources/driver/mpu6050/mpu_6050.c:86:6:MPU6050_LowPwrAccelOnly	8	static
+sources/driver/mpu6050/mpu_6050.c:123:6:MPU6050_Read_Accel	24	static
+sources/driver/mpu6050/mpu_6050.c:139:6:MPU6050_Read_Gyro	24	static
+sources/driver/mpu6050/mpu_6050.c:155:6:MPU6050_Read_Temp	16	static
+sources/driver/mpu6050/mpu_6050.c:188:8:Kalman_getAngle	104	static
+sources/driver/mpu6050/mpu_6050.c:165:6:MPU6050_Read_Angle	56	static

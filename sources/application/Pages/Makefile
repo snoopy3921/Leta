@@ -13,3 +13,4 @@ SOURCES_CPP += sources/application/Pages/page_mpu.cpp
 SOURCES_CPP += sources/application/Pages/page_compass.cpp
 SOURCES_CPP += sources/application/Pages/page_runner_game.cpp
 SOURCES_CPP += sources/application/Pages/page_flashing.cpp
+SOURCES_CPP += sources/application/Pages/page_boids.cpp

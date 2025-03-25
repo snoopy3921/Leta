@@ -1,0 +1,5 @@
+sources/driver/hmc5883l/hmc5883l.c:28:13:HMC5883L_Write_Byte	8	static
+sources/driver/hmc5883l/hmc5883l.c:33:15:HMC5883L_Read_Byte	8	static
+sources/driver/hmc5883l/hmc5883l.c:39:6:HMC5883LRead	16	static
+sources/driver/hmc5883l/hmc5883l.c:48:15:HMC5883LInit	8	static
+sources/driver/hmc5883l/hmc5883l.c:59:7:HMC5883LCalculateHeading	16	static

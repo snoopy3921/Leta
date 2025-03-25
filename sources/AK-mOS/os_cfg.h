@@ -15,7 +15,7 @@ extern "C"
 
 #include <stdint.h>
 
-#define OS_CFG_HEAP_SIZE                  ((size_t)1024 * 3u)
+#define OS_CFG_HEAP_SIZE                  ((size_t)1024 * 5u)
 #define OS_CFG_PRIO_MAX                   (10)
 #define OS_CFG_DELAY_MAX                  ((uint32_t)0xffffffffUL)
 

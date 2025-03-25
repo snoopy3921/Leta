@@ -1,0 +1,4 @@
+sources/AK-mOS/Src/os_cpu.c:13:6:os_cpu_systick_init_freq	8	static
+sources/AK-mOS/Src/os_cpu.c:32:7:SVC_Handler	0	static
+sources/AK-mOS/Src/os_cpu.c:56:7:PendSV_Handler	0	static
+sources/AK-mOS/Src/os_cpu.c:97:7:SysTick_Handler	8	static

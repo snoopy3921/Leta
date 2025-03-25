@@ -126,7 +126,7 @@ static const char *weekDay[7] = {
 };
 
 static const char *quotes[] = {
-	"Good things take time\0",
+	"Good things take time - Leta watch\0",
 };
 static window quote_window;
 
@@ -143,7 +143,7 @@ static void setup(void * p_arg)
 	lbl_quote.printf("%s", quotes[0]);
 
 	anim_quote.set_behavior(0, ANIM_INFINITY);
-	anim_quote.create_move_offset(&lbl_quote, -200, 0, 5000);
+	anim_quote.create_move_offset(&lbl_quote, -300, 0, 6000);
 
 	grp1.create(0, 0, 128, 64);
 	lb1.create(0, 0);

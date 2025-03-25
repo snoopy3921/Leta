@@ -24,7 +24,7 @@ enum PAGE_ID{
 	PAGE_MPU_ID,
 	PAGE_COMPASS_ID,
 	PAGE_RUNNER_GAME_ID, 
-
+	PAGE_BOIDS_ID,
     /* EOP page ID (Size of page table)*/
 	PAGE_EOP_ID,
 };
@@ -38,6 +38,7 @@ extern void page_flashing_reg(void);
 extern void page_mpu_reg(void);
 extern void page_compass_reg(void);
 extern void page_runner_game_reg(void);
+extern void page_boids_reg(void);
 
 /*****************************************************************************/
 /*  USER DEFINE SECTION END

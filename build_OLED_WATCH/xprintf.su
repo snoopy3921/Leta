@@ -1,0 +1,12 @@
+sources/platform/xprintf.c:40:12:ilog10	16	static
+sources/platform/xprintf.c:62:15:i10x	8	static
+sources/platform/xprintf.c:84:13:ftoa	56	static
+sources/platform/xprintf.c:169:6:xfputc	16	static
+sources/platform/xprintf.c:161:6:xputc	8	static
+sources/platform/xprintf.c:232:13:xvfprintf	112	static
+sources/platform/xprintf.c:195:6:xfputs	16	static
+sources/platform/xprintf.c:187:6:xputs	8	static
+sources/platform/xprintf.c:370:6:xvfprintf_buff	112	static
+sources/platform/xprintf.c:508:6:xprintf	16	static
+sources/platform/xprintf.c:520:6:xfprintf	12	static
+sources/platform/xprintf.c:535:6:xsprintf	20	static

@@ -1,0 +1,9 @@
+sources/application/Pages/page_setting.cpp:117:13:void event_hdler(void*)	56	static
+sources/application/Pages/page_setting.cpp:86:13:void loop(void*)	16	static
+sources/application/Pages/page_setting.cpp:42:13:void setup(void*)	48	static
+sources/application/Pages/page_setting.cpp:97:13:void delete_obj(void*)	16	static
+./sources/Oled_GUI/Inc/gui_label.h:20:5:gui_label::~gui_label()	8	static
+sources/application/Pages/page_setting.cpp:345:1:void __static_initialization_and_destruction_0(int, int)	32	static
+sources/application/Pages/page_setting.cpp:342:6:void page_setting_reg()	16	static
+sources/application/Pages/page_setting.cpp:345:1:cpp)	8	static
+sources/application/Pages/page_setting.cpp:345:1:cpp)	8	static
