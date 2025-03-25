@@ -1,5 +1,0 @@
-sources/AK-mOS/Src/os_prio.c:16:6:os_prio_insert	0	static
-sources/AK-mOS/Src/os_prio.c:5:6:os_prio_init	8	static
-sources/AK-mOS/Src/os_prio.c:26:6:os_prio_remove	0	static
-sources/AK-mOS/Src/os_prio.c:36:10:os_prio_get_highest	0	static
-sources/AK-mOS/Src/os_prio.c:58:10:os_prio_get_curr	0	static

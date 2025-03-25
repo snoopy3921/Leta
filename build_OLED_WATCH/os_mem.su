@@ -1,3 +1,0 @@
-sources/AK-mOS/Src/os_mem.c:34:13:os_mem_heap_init	0	static
-sources/AK-mOS/Src/os_mem.c:56:7:os_mem_malloc	16	static
-sources/AK-mOS/Src/os_mem.c:129:6:os_mem_free	16	static

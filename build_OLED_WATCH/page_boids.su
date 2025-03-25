@@ -1,8 +1,0 @@
-sources/application/Pages/page_boids.cpp:62:6:void my_free_style_draw(gui_obj*)	8	static
-sources/application/Pages/page_boids.cpp:195:13:void event_hdler(void*)	16	static
-sources/application/Pages/page_boids.cpp:88:13:void loop(void*)	40	static
-sources/application/Pages/page_boids.cpp:70:13:void setup(void*)	32	static
-sources/application/Pages/page_boids.cpp:229:1:void __static_initialization_and_destruction_0(int, int)	8	static
-sources/application/Pages/page_boids.cpp:226:6:void page_boids_reg()	16	static
-sources/application/Pages/page_boids.cpp:229:1:cpp)	8	static
-sources/application/Pages/page_boids.cpp:229:1:cpp)	8	static

@@ -1,6 +1,0 @@
-sources/AK-mOS/Src/os_kernel.c:33:1:os_start_first_task	0	static
-sources/AK-mOS/Src/os_kernel.c:11:6:assert_log	0	static
-sources/AK-mOS/Src/os_kernel.c:16:6:os_critical_enter	0	static
-sources/AK-mOS/Src/os_kernel.c:22:6:os_critical_exit	0	static
-sources/AK-mOS/Src/os_kernel.c:50:6:os_init	8	static
-sources/AK-mOS/Src/os_kernel.c:57:6:os_run	8	static

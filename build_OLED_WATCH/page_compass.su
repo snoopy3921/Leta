@@ -1,8 +1,0 @@
-sources/application/Pages/page_compass.cpp:118:13:void event_hdler(void*)	16	static
-sources/application/Pages/page_compass.cpp:106:13:void loop(void*)	8	static
-sources/application/Pages/page_compass.cpp:95:13:void setup(void*)	16	static
-sources/application/Pages/page_compass.cpp:62:13:void free_style_draw(gui_obj*)	40	static
-sources/application/Pages/page_compass.cpp:138:1:void __static_initialization_and_destruction_0(int, int)	24	static
-sources/application/Pages/page_compass.cpp:135:6:void page_compass_reg()	16	static
-sources/application/Pages/page_compass.cpp:138:1:cpp)	8	static
-sources/application/Pages/page_compass.cpp:138:1:cpp)	8	static

@@ -1,2 +1,0 @@
-sources/Oled_GUI/Src/gui.cpp:5:6:void gui_initialize()	8	static
-sources/Oled_GUI/Src/gui.cpp:14:6:void gui_run()	8	static

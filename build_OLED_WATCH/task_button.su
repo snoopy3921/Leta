@@ -1,5 +1,0 @@
-sources/application/Tasks/task_button.cpp:14:6:void btn_up_left_callback(void*)	8	static
-sources/application/Tasks/task_button.cpp:38:6:void btn_up_right_callback(void*)	8	static
-sources/application/Tasks/task_button.cpp:63:6:void btn_down_left_callback(void*)	8	static
-sources/application/Tasks/task_button.cpp:86:6:void btn_down_right_callback(void*)	8	static
-sources/application/Tasks/task_button.cpp:113:6:void task_button(void*)	8	static

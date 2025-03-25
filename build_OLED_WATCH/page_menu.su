@@ -1,9 +1,0 @@
-sources/application/Pages/page_menu.cpp:42:13:void loop(void*)	8	static
-sources/application/Pages/page_menu.cpp:59:13:void event_hdler(void*)	24	static
-sources/application/Pages/page_menu.cpp:17:13:void setup(void*)	32	static
-sources/application/Pages/page_menu.cpp:48:13:void delete_obj(void*)	16	static
-./sources/Oled_GUI/Inc/gui_label.h:20:5:gui_label::~gui_label()	8	static
-sources/application/Pages/page_menu.cpp:121:1:void __static_initialization_and_destruction_0(int, int)	32	static
-sources/application/Pages/page_menu.cpp:118:6:void page_menu_reg()	16	static
-sources/application/Pages/page_menu.cpp:121:1:cpp)	8	static
-sources/application/Pages/page_menu.cpp:121:1:cpp)	8	static

@@ -1,9 +1,0 @@
-./sources/Oled_GUI/Inc/gui_core.h:109:18:virtual void gui_obj::set_x(int16_t)	0	static
-./sources/Oled_GUI/Inc/gui_core.h:110:15:virtual void gui_obj::set_y(int16_t)	0	static
-./sources/Oled_GUI/Inc/gui_core.h:154:18:virtual void gui_obj::set_fade(uint8_t)	0	static
-sources/Oled_GUI/Src/gui_popup.cpp:76:6:virtual void gui_popup::draw()	16	static
-./sources/Oled_GUI/Inc/gui_popup.h:39:10:virtual void gui_popup::destroy()	24	static
-sources/Oled_GUI/Src/gui_popup.cpp:4:6:void gui_popup::create(int16_t, int16_t)	24	static
-sources/Oled_GUI/Src/gui_popup.cpp:39:6:void gui_popup::show()	24	static
-sources/Oled_GUI/Src/gui_popup.cpp:54:6:void gui_popup::hide()	24	static
-sources/Oled_GUI/Src/gui_popup.cpp:69:6:void gui_popup::toggle()	8	static

@@ -1,3 +1,0 @@
-sources/device/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c:84:10:DBGMCU_GetREVID	0	static
-sources/device/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c:94:10:DBGMCU_GetDEVID	0	static
-sources/device/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c:134:6:DBGMCU_Config	0	static

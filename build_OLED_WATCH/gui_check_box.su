@@ -1,7 +1,0 @@
-./sources/Oled_GUI/Inc/gui_core.h:109:18:virtual void gui_obj::set_x(int16_t)	0	static
-./sources/Oled_GUI/Inc/gui_core.h:110:15:virtual void gui_obj::set_y(int16_t)	0	static
-./sources/Oled_GUI/Inc/gui_core.h:154:18:virtual void gui_obj::set_fade(uint8_t)	0	static
-sources/Oled_GUI/Src/gui_check_box.cpp:30:6:virtual void gui_chkbox::draw()	24	static
-./sources/Oled_GUI/Inc/gui_check_box.h:41:10:virtual void gui_chkbox::destroy()	8	static
-sources/Oled_GUI/Src/gui_check_box.cpp:3:6:void gui_chkbox::create(int16_t, int16_t, uint8_t, gui_state)	16	static
-sources/Oled_GUI/Src/gui_check_box.cpp:25:6:void gui_chkbox::toggle()	0	static

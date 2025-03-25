@@ -1,9 +1,0 @@
-sources/application/main.cpp:77:6:void countdown_screen_time()	8	static
-sources/application/main.cpp:68:13:void reload_watchdog()	8	static
-sources/application/main.cpp:63:13:void update_watch_time()	32	static
-sources/application/main.cpp:156:1:void __static_initialization_and_destruction_0(int, int)	16	static
-sources/application/main.cpp:32:6:void task_gui(void*)	8	static
-sources/application/main.cpp:40:6:void task_page_mng(void*)	8	static
-sources/application/main.cpp:88:5:int main()	40	static
-sources/application/main.cpp:156:1:cpp)	8	static
-sources/application/main.cpp:156:1:cpp)	8	static
