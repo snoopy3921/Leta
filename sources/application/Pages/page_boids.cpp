@@ -28,17 +28,21 @@ static int16_t visual_range = 30;
 static int16_t visual_range_squared = visual_range * visual_range;
 static int16_t protected_range = 5;
 static int16_t protected_range_squared = protected_range*protected_range;
-static float centering_factor = 0.0005;
-static float matching_factor = 0.04;
+static float centering_factor = 0.01;
+static float matching_factor = 0.05;
 static float avoidfactor = 0.05;
 static int16_t maxspeed = 6;
 static int16_t minspeed = 2;
+
+static float predator_centering_factor = 0.02;
+static int16_t predator_range = 20;
+static int16_t predator_range_squared = predator_range*predator_range;
 // maxbias: 0.01
 // bias_increment: 0.00004
 // default biasval: 0.001 (user-changeable, or updated dynamically)
 /*************/
 
-#define NUM_OF_BOIDS 50
+#define NUM_OF_BOIDS 90
 
 
 typedef struct 
@@ -56,6 +60,15 @@ static int16_t close_dx, close_dy;
 
 static boid my_boids[NUM_OF_BOIDS];
 
+static float target_xpos_avg, target_ypos_avg;
+static bool use_predator = true;
+static boid predator;
+
+static uint8_t const pacman_icon[] = {
+	0x30, 0xfc, 0xfe, 0xff, 0xfb, 0xf9, 0xcf, 0xcf, 0x86, 0x00, 0x00, 0x00, 0x01, 0x03, 0x03, 0x03, 
+	0x03, 0x03, 0x01, 0x00
+};
+
 
 static gui_free_style gui_fs;
 
@@ -65,6 +78,7 @@ void my_free_style_draw(gui_obj *free_style_obj)
       {
             gui_window_draw_pixel(&window_screen_size, my_boids[main_boid].x, my_boids[main_boid].y, DRAW_STATE_ON);
       }
+      if(use_predator) gui_window_draw_bmp(&window_screen_size, predator.x , predator.y , 10, 10, pacman_icon, DRAW_STATE_ON);
 }
 
 static void setup(void * p_arg)
@@ -74,6 +88,11 @@ static void setup(void * p_arg)
       // Stop the display from sleeping
       os_timer_set_period(p_timer_countdown_screen_time, 30000);
 	os_timer_reset(p_timer_countdown_screen_time);
+
+      predator.x = 30;
+      predator.y = 30; 
+      predator.vx = 3;
+      predator.vy = 3;
 
       for(uint16_t main_boid = 0; main_boid < NUM_OF_BOIDS; main_boid++)
       {
@@ -87,7 +106,10 @@ static void setup(void * p_arg)
 
 static void loop(void * p_arg)
 {
-    os_task_delay(10);
+    os_task_delay(5);
+    
+    target_xpos_avg = 0;
+    target_ypos_avg = 0;
       // For every boid . . .
       for(uint16_t main_boid = 0; main_boid < NUM_OF_BOIDS; main_boid++)
       {
@@ -157,6 +179,31 @@ static void loop(void * p_arg)
                              (yvel_avg - my_boids[main_boid].vy)*matching_factor);
             }
 
+
+            /** Predator section */
+            if(use_predator)
+            {
+                  //Compute differences in x and y coordinates
+                  int16_t dx = my_boids[main_boid].x - predator.x;
+                  int16_t dy = my_boids[main_boid].y - predator.y;
+
+                  if (abs(dx)<predator_range && abs(dy)<predator_range)
+                  {
+                        // calculate the squared distance
+                        int squared_distance = dx*dx + dy*dy;
+
+                        // Is squared distance less than the protected range?
+                        if (squared_distance < predator_range_squared)
+                        {
+                              // If so, calculate difference in x/y-coordinates to nearfield boid
+                              close_dx += dx*5;
+                              close_dy += dy*5;
+                        }
+                  }
+                  /** ***** */
+            }
+
+
             // Add the avoidance contribution to velocity
             my_boids[main_boid].vx = my_boids[main_boid].vx + (close_dx*avoidfactor);
             my_boids[main_boid].vy = my_boids[main_boid].vy + (close_dy*avoidfactor);
@@ -190,7 +237,43 @@ static void loop(void * p_arg)
             // Update boid's position
             my_boids[main_boid].x = my_boids[main_boid].x + my_boids[main_boid].vx;
             my_boids[main_boid].y = my_boids[main_boid].y + my_boids[main_boid].vy;
+
+
+            /** Predator section */
+            if(use_predator)
+            {
+                  target_xpos_avg += my_boids[main_boid].x;
+                  target_ypos_avg += my_boids[main_boid].y;
+            }
+            /***** */
       }
+
+      /** Predator section */
+      if(use_predator)
+      {
+            target_xpos_avg = target_xpos_avg / NUM_OF_BOIDS;
+            target_ypos_avg = target_ypos_avg / NUM_OF_BOIDS;
+
+            predator.vx = predator.vx + (target_xpos_avg - predator.x)*predator_centering_factor;
+            predator.vy = predator.vy + (target_ypos_avg - predator.y)*predator_centering_factor;
+
+            // If the predator is near an edge, make it turn by turnfactor
+            // (this describes a box, will vary based on boundary conditions)
+            // This will also limit the speed as i didnt set speed limit
+            if (predator.y < 5) // Top
+                  predator.vy = predator.vy + turnfactor;
+            if (predator.x > GUI_CFG_DISPLAY_W - 5) // Right
+                  predator.vx =  predator.vx - turnfactor;
+            if (predator.x < 5) // Left
+                  predator.vx =  predator.vx + turnfactor;
+            if (predator.y > GUI_CFG_DISPLAY_H - 5)
+                  predator.vy = predator.vy - turnfactor;
+
+            // Update predator's position
+            predator.x = predator.x + predator.vx;
+            predator.y = predator.y + predator.vy;
+      }
+      /***** */
 }
 static void event_hdler(void * p_event)
 {
@@ -218,6 +301,10 @@ static void event_hdler(void * p_event)
 		/* code */
             protected_range = 5;
             protected_range_squared = protected_range*protected_range;
+		break;
+      case SIG_BTN_UR_LONG_PRESSED:
+		/* code */
+            use_predator = !use_predator;
 		break;
 	default:
 		break;
