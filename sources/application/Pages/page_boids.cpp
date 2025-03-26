@@ -104,6 +104,9 @@ static void setup(void * p_arg)
 
 }
 
+/**
+ * Thanks to vẻy helpful resource: https://vanhunteradams.com/Pico/Animal_Movement/Boids-algorithm.html
+ */
 static void loop(void * p_arg)
 {
     os_task_delay(5);
